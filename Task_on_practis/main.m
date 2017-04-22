@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Apple.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+
+        for (int i = 0 ; i < 5; i++){
+            Apple *aple = [[Apple alloc] init:[NSNumber numberWithInteger:i]];
+            [aple printDescription];
+        }
     }
     return 0;
 }
